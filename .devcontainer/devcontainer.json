@@ -1,0 +1,29 @@
+{
+    "name":"python-dev",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+        "ghcr.io/devcontainers/features/python:1":{}
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.pythonPath": "usr/local/python/current/bin/python",
+                "python.analysis.typeCheckingMode": "strict",
+                "python.analysis.autoImportCompletions":true,
+                "python.analysis.inlayHints.variableTypes": true,
+                "python.analysis.inlayHints.functionReturnTypes": true,
+                "python.linting.pylintEnabled": false,
+                "workbench.colorTheme": "Tokyo Night",
+                "workbench.iconTheme": "material-icon-theme"
+            },
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "charliermarsh.ruff",
+                "eamodio.gitlens",
+                "PKief.material-icon-theme",
+                "enkia.tokyo-night"
+            ]
+        }
+    }
+}
